@@ -11,20 +11,20 @@ export default function Navbars() {
         <Navbar  expand="lg">
         <Container>   
 
-        <Navbar.Brand href="#home">
+        <Navbar.Brand  href="/homepage">
          <Image src={aoc} style={{width: '200px', }} rounded />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto right">
-            <Nav.Link href="/homepage">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="#link">Concat</Nav.Link>
-            <Nav.Link href="/gallery">gallery</Nav.Link>
+          <Nav className="mr-auto" style={{color: '#38ef7d'}}>
+            <Nav.Link style={{fontWeight: 'bold',fontSize: '1.2rem'}} href="/homepage">Home</Nav.Link>
+            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/about">About</Nav.Link>
+            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="#link">Concat</Nav.Link>
+            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/gallery">gallery</Nav.Link>
         </Nav>     
         <ButtonGroup>
-                <Button  variant="light" size="lg" >Login</Button>
-                <Button variant="light" size="lg">Register</Button>
+                <Button  style={{ fontWeight: 'bold'}} variant="light" size="lg" >Login</Button>
+                <Button  style={{ fontWeight: 'bold'}} variant="light" size="lg">Register</Button>
             </ButtonGroup>
        </Navbar.Collapse>
       </Container>

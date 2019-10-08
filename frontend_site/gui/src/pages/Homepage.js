@@ -5,7 +5,7 @@ import Navbars from '../components/Navbars'
 export default class Homepage extends Component {
     render() {
         return (
-            <div>
+            <div style={{height: '2000px'}}>
                 <Navbars />
                 <Carousels/>    
                 <h1> this is home page</h1> 
