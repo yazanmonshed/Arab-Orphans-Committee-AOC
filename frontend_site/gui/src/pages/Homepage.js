@@ -7,8 +7,8 @@ export default class Homepage extends Component {
         return (
             <div>
                 <Navbars />
-                <Carousels/>
-                <h1> this is home page</h1>
+                <Carousels/>    
+                <h1> this is home page</h1> 
             </div>
         )
     }

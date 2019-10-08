@@ -8,10 +8,9 @@ import aoc from './images/aoc.png'
 export default function Navbars() {
     return (
         <div>
-        <Navbar expand="lg">
-       </Navbar>
         <Navbar  expand="lg">
-        <Container>
+        <Container>   
+
         <Navbar.Brand href="#home">
          <Image src={aoc} style={{width: '200px', }} rounded />
         </Navbar.Brand>
@@ -24,8 +23,8 @@ export default function Navbars() {
             <Nav.Link href="/gallery">gallery</Nav.Link>
         </Nav>     
         <ButtonGroup>
-                <Button variant="light">Login</Button>
-                <Button variant="light">Register</Button>
+                <Button  variant="light" size="lg" >Login</Button>
+                <Button variant="light" size="lg">Register</Button>
             </ButtonGroup>
        </Navbar.Collapse>
       </Container>
