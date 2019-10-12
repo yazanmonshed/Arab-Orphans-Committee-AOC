@@ -1,0 +1,31 @@
+/*
+ Start SCSS Code Here 
+ Code By : yazan al monshed
+ Date : 10/10/2019 
+*/
+
+$rgba_images : rgba(0, 0, 0, 0.5);
+
+body {
+    height: 2000px
+}
+.image-gallery {
+    background-image: url('../images/jerusalem4.jpg');
+    background-position: 50% 50%;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    // &:hover {
+    //     transform: scale();
+    //     transition-duration: 2s
+    // }
+    .overlay-gallery {
+        width: 100%;
+        height:500px;
+        background: $rgba_images;
+            
+      }
+  
+} 
+
