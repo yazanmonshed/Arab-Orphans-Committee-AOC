@@ -26,7 +26,7 @@ export default function Navbars() {
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">FAQ</Nav.Link>
         </Nav>     
         <ButtonToolbar>
-                <Button  className="mr-3" style={{ fontWeight: 'bold', color:'#777'}} variant="light" size="lg" >Login</Button>
+                <Button  className="mr-3" style={{ fontWeight: 'bold', color:'#777'}} variant="light" size="lg" href="/login" >Login</Button>
                 <Button  style={{ fontWeight: 'bold'}} variant="outline-success" size="lg" href="/register">Register</Button>
             </ButtonToolbar>
             {/* <ButtonToolbar>
