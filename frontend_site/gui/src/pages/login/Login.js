@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Image, Card, Form, Container,Row, Col,Button} from 'react-bootstrap';
 import './login.scss'
+import Footer from '../../components/footer/Footer'
 import logo from '../images_pages/aoc.png'
 export default class Login extends Component {
     render() {
@@ -9,10 +10,11 @@ export default class Login extends Component {
                 <Container>
                       <Row>
                          <Col xs={12}>
-                         <Image  src={logo} className="logo-login" alt="image  not found" />
+                         <Image  src={logo} className="logo-login"   alt="image  not found" />
                             <Card className="login-forms">
                                 <Card.Body>
-                                    <Form>
+                                    <Card.Title style={{textAlign: 'center', color: '#222'}}>Arab Orphans committee </Card.Title>
+                                    <Form className="custom-form-register">
                                     <Form.Group controlId="formBasicEmail">
                                         <Form.Label>Email address</Form.Label>
                                         <Form.Control type="email" placeholder="Enter email" />
@@ -25,16 +27,19 @@ export default class Login extends Component {
                                         <Form.Label>Password</Form.Label>
                                         <Form.Control type="password" placeholder="Password" />
                                     </Form.Group>
-                                    <Button variant="success" size="lg" type="submit">
+                                    <Button variant="success" size="lg" type="submit" block style={{marginTop: '40px'}}>
                                         Sign in
                                     </Button>
-                                     <Button variant="link" href="/register">Register Now</Button>
+                                   <span className="span-login-page">OR</span>
+                                     <Button variant="link" href="/register" block>Register Now</Button>
                                     </Form>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
-                </Container>
+              </Container>
+              <Footer />
+
             </div>
         )
     }
