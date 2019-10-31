@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import './Homepage.scss'
 import Carousels from '../../components/carousels/Carousels'
 import Navbars from '../../components/navbar_home/Navbars' 
+import MainFooter from '../../components/footer/FooterMainPage'
 import {Container, Row, Col, Card, Button, Carousel, CardDeck} from 'react-bootstrap'
+// import MainFooter from '../../components/footer/FooterMainPage'
 export default class Homepage extends Component {
     render() {
         return (
@@ -64,6 +66,7 @@ export default class Homepage extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <MainFooter/>
                         
             </div>
         )

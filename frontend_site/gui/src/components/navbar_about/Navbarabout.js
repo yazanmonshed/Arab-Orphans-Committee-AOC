@@ -17,7 +17,7 @@ export default class Navbarabout extends Component {
                     <Nav className="mr-auto right">
                         <Nav.Link href="/homepage">Home</Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="#link">Concat</Nav.Link>
+                        <Nav.Link href="#link">Blog</Nav.Link>
                         <Nav.Link href="/gallery">gallery</Nav.Link>
                         <Nav.Link href="/students">Our Students</Nav.Link>  
                         <Nav.Link href="/faq">FAQ</Nav.Link>

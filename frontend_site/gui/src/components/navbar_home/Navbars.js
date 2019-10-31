@@ -23,7 +23,7 @@ export default function Navbars() {
           <Nav className="mr-auto" style={{color: '#38ef7d'}}>
             <Nav.Link style={{fontWeight: 'bold',fontSize: '1.2rem'}} href="/homepage">Home</Nav.Link>
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/about">About</Nav.Link>
-            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="#link">Concat</Nav.Link>
+            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="#link">Blog</Nav.Link>
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/gallery">gallery</Nav.Link>
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/students">Our Students</Nav.Link>
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">FAQ</Nav.Link>
