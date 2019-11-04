@@ -37,10 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', 
+    # 'accounts',
+    'blog',
+    'rest_framework',
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -76,13 +82,21 @@ WSGI_APPLICATION = 'djreact.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'AOCDB',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST':'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'AOCDB',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgres',
+#         'HOST':'localhost'
+#     }
+# }
 
 
 # Password validation
@@ -132,3 +146,13 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
         messages.ERROR : 'danger'
 }
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+CORS_ORIGIN_ALLOW_ALL= True
