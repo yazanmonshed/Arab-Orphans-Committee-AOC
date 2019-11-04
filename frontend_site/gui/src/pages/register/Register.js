@@ -12,7 +12,7 @@ export default class Register extends Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                    <a href="/homepage"><Image src={logo}  className="logo-register"></Image></a>
+                                    <Link to="/homepage"><a href="/homepage"><Image src={logo}  className="logo-register"></Image></a></Link>
                                     <Card className="custom-register-page">
                                         <h1 style={{textAlign: 'center'}}>Register now</h1>
                                     <Card.Body>

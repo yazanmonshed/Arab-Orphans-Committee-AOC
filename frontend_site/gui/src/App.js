@@ -10,6 +10,7 @@ import Faq from './pages/faq/Faq'
 import Students from './pages/our_students/Students'
 import Register from './pages/register/Register'
 import Login from './pages/login/Login';
+import StudentsPage from './pages/students_pages/Students'
 class App extends Component {
   render() {
     return (
@@ -21,6 +22,8 @@ class App extends Component {
           <Route exact path="/faq" component={Faq} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/studentspage" component={StudentsPage} />
+
       </div>
     )
   }

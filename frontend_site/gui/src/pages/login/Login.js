@@ -3,6 +3,7 @@ import {Image, Card, Form, Container,Row, Col,Button} from 'react-bootstrap';
 import './login.scss'
 import Footer from '../../components/footer/Footer'
 import logo from '../images_pages/aoc.png'
+import {Link} from 'react-router-dom'
 export default class Login extends Component {
     render() {
         return (  
@@ -31,7 +32,9 @@ export default class Login extends Component {
                                         Sign in
                                     </Button>
                                    <span className="span-login-page">OR</span>
-                                     <Button variant="link" href="/register" block>Register Now</Button>
+                                   <Link to="/register">
+                                   <Button variant="link"  block>Register Now</Button>
+                                   </Link>
                                     </Form>
                                 </Card.Body>
                             </Card>

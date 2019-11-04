@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Navbarabout from '../../components/navbar_about/Navbarabout'
 import {Container, Row, Col, Breadcrumb, Image, Accordion, Card, Button, Tab,ListGroup} from 'react-bootstrap'
 import about_image from '../images_pages/About.png'
+import MainFooter from '../../components/footer/FooterMainPage'
 import './About.scss'
 // import Our_major from './Our_major'
 export default class About extends Component {
@@ -87,6 +88,7 @@ export default class About extends Component {
                    
                 </Row>
                </Container>
+               <MainFooter />
             </div>
         )
     }
