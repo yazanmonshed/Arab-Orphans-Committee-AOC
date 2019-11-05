@@ -11,10 +11,12 @@ import Students from './pages/our_students/Students'
 import Register from './pages/register/Register'
 import Login from './pages/login/Login';
 import StudentsPage from './pages/students_pages/Students'
+import Blog from './pages/blog/Blog'
 class App extends Component {
   render() {
     return (
-      <div> 
+      <main> 
+        {/* <Switch> */}
           <Route exact path="/homepage" component={Homepage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/gallery" component={Gallery} />
@@ -23,8 +25,9 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/studentspage" component={StudentsPage} />
-
-      </div>
+          <Route exact path="/blog" component={Blog} />
+          {/* </Switch> */}
+      </main>
     )
   }
 } 

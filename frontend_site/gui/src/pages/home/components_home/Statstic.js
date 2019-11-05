@@ -11,9 +11,9 @@ export default class ChartMajor extends Component {
                     label: '# of Votes',
                     data: [57, 29, 14],
                     backgroundColor: [
-                        '#78e08f',
-                        '#e55039',
-                        '#4a69bd',
+                          '#05668D',
+                          '#028090',
+                          '#00A896',
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',

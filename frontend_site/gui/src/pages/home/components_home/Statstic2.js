@@ -11,9 +11,9 @@ export default class ChartMoney extends Component {
                     label: '# of Votes',
                     data: [69, 17, 14],
                     backgroundColor: [
-                        '#78e08f',
-                        '#e55039',
-                        '#4a69bd',
+                      '#05668D',
+                      '#028090',
+                      '#00A896',
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
@@ -22,7 +22,7 @@ export default class ChartMoney extends Component {
                         'rgba(75, 192, 192, 1)',
                         'rgba(153, 102, 255, 1)',
                         'rgba(255, 159, 64, 1)'
-                    ],
+                    ],  
                     borderWidth: 1
                 }]
             

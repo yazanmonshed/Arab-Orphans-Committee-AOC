@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Articles from '../components_home/articles'
-import {Container, Col, Row} from 'react-bootstrap'
+import {Container, Col, Row, CardDeck} from 'react-bootstrap'
 import axios from 'axios'
 export default class ArticlesList extends Component {
 
     state = {
         articles: [],
+        // search,
         
     }
     
@@ -20,12 +21,15 @@ export default class ArticlesList extends Component {
 
         })
     }
-
+ 
+ 
   render() {
     return (
       <div>
           <Container>
-              {this.state.articles.map(item => <Articles info={item} key={Math.random() * 8}/>)}              
+              <Row>
+              {this.state.articles.map(item => <Articles info={item} key={Math.random() * 8} />)} 
+              </Row>
           </Container>
         </div>
     );
