@@ -6,7 +6,7 @@ from django.db import models
 class Blog(models.Model):
     image = models.ImageField(upload_to="post/")
     title =  models.CharField(max_length=100)
-    context = models.TextField()
+    # context = models.TextField()
     date = models.DateField()
 
     def __str__(self):
