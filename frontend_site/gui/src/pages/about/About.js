@@ -14,20 +14,19 @@ export default class About extends Component {
                     <Breadcrumb>
                     <Container>
                        <Breadcrumb.Item className="item-one" href="/homepage">
-                            <i className="fas fa-home"></i><span> Home </span>
+                            <i className="fas fa-home"></i><span> الرئيسية </span>
                         </Breadcrumb.Item>
                         <Breadcrumb.Item className="item-one" href="#" active>
-                           <span> About </span>
+                           <span>  عن الجمعية </span>
                         </Breadcrumb.Item>
                         </Container>
                     </Breadcrumb>
                <Container>
                 <Row>
                     <Col>
-                    <h1 className="mt-5 mb-5"> About Us </h1>
+                    <h1 className="mt-5 mb-5"> عن الجمعية </h1>
                     <p>
-                    The Arab Orphans Committee (AOC) was established in Haifa in 1940 by a group of prominent figures in Palestine, motivated by the sense of national duty towards the large number of children who lost their parents due to the successive revolutions that out broke to defend Palestine against the atrocious colonial campaigns.From the onset, the AOC believed in the importance of providing educational opportunities to the children it serves, so that they can play an active role in the development of the Arab society. To this end, the AOC sponsored several children to study at schools, higher institutes, and universities both either in Palestine or other Arab countries. Moreover, the Society established a well-equipped industrial institute designed to provide shelter, welfare, and education to the orphans in Haifa. The project was completed in 1948, the year of Palestine Nakba (Catastrophe). However, prior to its opening, the Zionist authorities took over the institute and used it for the Jewish orphans.    
-
+                    تأسست جمعية لجنة اليتيم العربي في حيفا عام 1940م من قبل نفر كريم من رجالات فلسطين؛ بدافع الاحساس بالواجب الوطني تجاه الأيتام الذين خلفتهم الثورات المتعاقبة، والتي تصدت للهجمات الاستعمارية الشرسة على فلسطين وأهلها. ورأت الجمعية حين تأسيسها أن تعمل على تسليح من تسعى إلى رعايتهم بالعلم ليساهموا في النهضة العربية، حيث قامت اللجنة بتعهد عدد من الأيتام للدراسة في مدارس داخلية وخارجية وجامعات ومعاهد عليا في فلسطين وعدد من الدول العربية، بالإضافة إلى إنشاء معهداً صناعياً كامل التجهيزات لإيواء الأيتام ورعايتهم وتعليمهم في مدينة حيفا. وتم إنجاز العمل في المعهد في العام الذي حصلت فيه نكبة فلسطين عام 1948م واستولت السلطات الصهيونية عليه قبل إفتتاحه وجعلت منه معهداً صناعياً لأيتام اليهود. 
                     </p>
                     </Col>
                 </Row>
@@ -37,11 +36,9 @@ export default class About extends Component {
                     </Col>
                     <Col lg={6} xs={12} sm={12} md={12}>
                     <p>
-                    Although the AOC members were forced to leave Palestine to different Arab countries, they were determined to fulfill their noble mission and re-established the society in 1949 in Jordan. They also established an industrial school in Jerusalem in 1965 thanks to the contributions of the Society supporters, Government of Jordan, and Government of Germany. The school was opened by late King Hussein in 1967.  
-                    </p>
+                    وبالرغم من تشتت شمل أعضاء الجمعية وتفرقهم في الأقطار العربية، إلا أنهم قرروا أن يواصلوا أداء الرسالة النبيلة وأعادوا تأسيس الجمعية عام 1949م وجعلوا مركزها المملكة الأردنية الهاشمية، وأقاموا مدرسة صناعية في مدينة القدس عام 1965م بمساعدة من مؤازري الجمعية ومن الحكومتين الأردنية والألمانية، وتم افتتاح المدرسة عام 1967م من قبل جلالة المغفور له الملك الحسين طيب الله ثراه. في ذات العام قامت السلطات الاستعمارية بإحتلال القدس والضفة الغربية، وبدأت بتضييق الخناق على المدرسة الصناعية وطلابها ومعلميها من خلال محاولاتها المستمرة لإغلاق المدرسة ومصادرتها، وإحاطتها بالجدار العازل، وفرض ضرائب جزافية عليها، وتصعيب عملية ممارسة الجمعية أعمالها في القدس.                    </p>
                     <p> 
-                    Despite the numerous obstacles created by the Israeli occupation in Palestine in general and Jerusalem in particular, the industrial school managed to keep providing its services. Nowadays, the school is still facing different forms of hardships such as making access to the school by the students and teachers almost impossible. For example, the occupation authorities built an additional wall surrounding the industrial estate in which the school is located. As a result, all roads to the schools were blocked, except for one entrance controlled by the Israeli authorities.Along with running the industrial school, the AOC continued its efforts to educate the orphans in Palestine and expanded over the time the target groups to include outperforming Palestinian and Arab students through soft loan and scholarship programs
-                    </p>
+                    إلى جانب إدارة المدرسة الصناعية، استمرت اللجنة في عملها المتواصل الهادف إلى تعليم وتثقيف أيتام فلسطين، وتوسعت الفئات المستهدفة عبر السنين لتشمل أيتام العرب بالإضافة إلى المتفوقين من طلبة فلسطين والطلبة العرب من خلال برنامج القروض الميسرة والمنح الجامعية.                     </p>
                     
                     </Col>
                 </Row>

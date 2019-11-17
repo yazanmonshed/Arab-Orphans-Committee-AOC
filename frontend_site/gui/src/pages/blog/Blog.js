@@ -40,7 +40,7 @@ handelChange = (e) => {
     console.log(this.state.search)
 
 }
-handleSubmit = (e) => {
+handleSubmit = (e,id) => {
     e.preventDefault() 
 }
 
@@ -71,7 +71,7 @@ handleSubmit = (e) => {
         <Container>
           <Row>
             <Col>
-            <Search handleSubmit={this.handleSubmit} handelChange={this.handelChange} search={this.state.search}/>
+              <Search handleSubmit={this.handleSubmit} handelChange={this.handelChange} search={this.state.search}/>
             <BlogList articles={this.state.articles}/>
             </Col>
           </Row>

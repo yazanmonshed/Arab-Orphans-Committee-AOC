@@ -16,7 +16,7 @@ export default function Navbars() {
         <Navbar  expand="lg" collapseOnSelect expand="lg">
         <Container>   
         <ButtonToolbar>
-            <Link to="/login"><Button  className="mr-3" style={{ fontWeight: 'bold', color:'#777'}} variant="light" size="lg">دخول </Button></Link>
+            <Link to="/login"><Button  className="mr-3" style={{ fontWeight: 'bold', color:'#777'}} variant="light" size="lg"><i className="fas fa-sign-in-alt" style={{padding: '5px'}}></i>دخول </Button></Link>
             <Link to="register"><Button  style={{ fontWeight: 'bold'}} variant="outline-success" size="lg" >سجل الان</Button></Link>
             </ButtonToolbar>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

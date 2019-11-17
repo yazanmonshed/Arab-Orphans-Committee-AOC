@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <hr />
-                <h6>Copyright &copy; 2020 Arab Orphans Committe</h6>
+                <h6>Copyright &copy; 2020 جمعية لجنة اليتيم العربي</h6>
             </div>
         )
     }
