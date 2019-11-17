@@ -41,9 +41,18 @@ INSTALLED_APPS = [
     # 'accounts',
     'blog',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'allauth.socialaccount',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     'corsheaders',
 
 ]
+SITE_ID = 1
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -137,8 +146,12 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 STATIC_URL = '/static/'
+MEDIA_URL = 'media/'
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'Arab-Orphans-Committee-AOC/fontend_site/frontend_site')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'resources')
 ] 
 
 # Messages 
@@ -156,3 +169,5 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_ALLOW_ALL= True
+
+# ACCOUNT_AUTHENTICATION_METHOD = 'email'
