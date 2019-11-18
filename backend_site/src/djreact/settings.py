@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles', 
     # 'accounts',
     'blog',
+    'faq',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
@@ -87,7 +88,7 @@ WSGI_APPLICATION = 'djreact.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+#https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -99,7 +100,7 @@ DATABASES = {
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
+#         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'AOCDB',
 #         'USER': 'postgres',
 #         'PASSWORD': 'postgres',
@@ -154,7 +155,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'resources')
 ] 
 
-# Messages 
+# Messages  zz
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
         messages.ERROR : 'danger'
