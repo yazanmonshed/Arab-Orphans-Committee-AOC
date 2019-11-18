@@ -11,7 +11,7 @@ import FormsEachTerm from './forms_each_term'
        <Navbar bg="light">
          <Container>
           <Navbar.Brand href="#home">
-          Navbar with text
+          Students Page
         </Navbar.Brand>
 
         {
