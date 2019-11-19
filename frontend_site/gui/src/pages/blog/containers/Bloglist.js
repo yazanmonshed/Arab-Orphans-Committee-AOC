@@ -6,21 +6,20 @@ import {Row, Col ,Container} from 'react-bootstrap'
 export default class BlogList extends Component {
 
 
-//  componentDidMount() {
-//     axios.get('http://127.0.0.1:8000/blog_api/')
-//     .then(res => {
+ componentDidMount() {
+    axios.get('http://127.0.0.1:8000/blog_api/media/')
+    .then(res => {
         
-//         this.setState({
-//             articles: res.data 
-//         })
-//     })
-// }
+        this.setState({
+            articles: res.data 
+        })
+    })
+}
 
   render() {
     const {articles} = this.props;
     return (
       <div> 
-        {/* {this.state.articles.map(res => <Blogs key={res.id} image={res.image, res.title, res.context, res.date}/>)}       */}
         <Container>
             <Row>
                 <Col>

@@ -9,7 +9,7 @@ export default class Blogs extends Component {
       <React.Fragment>
            
           <Col  xs={12} sm={6}  lg={4}>
-             <CardDeck style={{width: '100%', height: '250px', boxShadow: '1px 2px 9px'}}>
+             <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={image} />
                     <Card.Body> 
