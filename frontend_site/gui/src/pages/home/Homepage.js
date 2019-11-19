@@ -7,6 +7,7 @@ import ChartMajor from './components_home/Statstic'
 import ChartMoney from './components_home/Statstic2'
 import ArticlesList from './containers/ArticlesListViews'
 import {Container, Row, Col} from 'react-bootstrap'
+import QrFiles from './components_home/QrFiles'
 export default class Homepage extends Component {
     render() {
         return (
@@ -32,6 +33,14 @@ export default class Homepage extends Component {
                             </Col>
                         </Row>
                         </Container>
+                        <Row lg={6} style={{background: '#DDD'}}>
+                       <Col>
+                            <QrFiles/>
+                        </Col>
+                           <Col>
+                                <h1>welcome here</h1>
+                           </Col>
+                       </Row>
                     </section>
                 <MainFooter/>        
             </div>

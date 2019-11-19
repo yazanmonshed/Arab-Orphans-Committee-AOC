@@ -11,7 +11,7 @@ import FormsEachTerm from './forms_each_term'
        <Navbar bg="light">
          <Container>
           <Navbar.Brand href="#home">
-          Students Page
+          Students Page 
         </Navbar.Brand>
 
         {
@@ -26,7 +26,7 @@ import FormsEachTerm from './forms_each_term'
 
           <Navbar.Toggle /> 
           <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
+          <Navbar.Text> 
              Signed in as: <a href="#login">Mark Otto</a>
           </Navbar.Text>
        </Navbar.Collapse>
