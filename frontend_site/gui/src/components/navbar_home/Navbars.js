@@ -24,7 +24,7 @@ export default function Navbars() {
           <Nav className="mr-auto" style={{color: '#38ef7d'}}>
               <Link style={{textDecoration: 'none'}} to="/homepage"><Nav.Link style={{fontWeight: 'bold',fontSize: '1.2rem'}}>الرئيسية</Nav.Link></Link>
            <Link to="/about"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/about">عن الجمعية</Nav.Link></Link> 
-            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="#link">المدونة</Nav.Link>
+            <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/blog">المدونة</Nav.Link>
             <Link to="/gallery"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/gallery">معرض الصور</Nav.Link></Link>
             <Link to="/students"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/students">طلابنا</Nav.Link></Link>
             <Link to="/faq"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">الاسئلة الاكثر تكرارا</Nav.Link></Link>
