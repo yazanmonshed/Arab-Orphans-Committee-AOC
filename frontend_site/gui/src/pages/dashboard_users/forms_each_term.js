@@ -66,6 +66,8 @@ export default class FormsEachTerm extends Component {
         <Form.Control type="number" placeholder="ادخل معدلك" />
         </Col>
     </Form.Group>
+    <Button type="submit" size="lg">ارسال</Button>
+
     </Form>
      </div>
     );

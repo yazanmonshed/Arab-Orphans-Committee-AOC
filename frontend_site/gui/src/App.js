@@ -12,6 +12,7 @@ import Login from './pages/login/Login';
 import StudentsPage from './pages/students_pages/Students'
 import Blog from './pages/blog/Blog'
 import Dashboard from './pages/dashboard_users/Dashboard'
+import BlogShow from './pages/blog/component_blog/BlogShow'
 class App extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends Component {
           <Route exact path="/studentspage" component={StudentsPage} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/dashborad" component={Dashboard} />
+          <Route exact path="/blogshow" component={BlogShow} />
           {/* </Switch> */}
       </main>
     )
