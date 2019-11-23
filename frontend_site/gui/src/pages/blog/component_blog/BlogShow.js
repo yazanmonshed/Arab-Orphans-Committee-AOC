@@ -2,10 +2,29 @@ import React, { Component } from 'react';
 import {Container, Row, Col, Navbar, Nav, Image,Jumbotron, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import aoc from '../../images_pages/aoc.png'
-
 import FooterMainPage from '../../../components/footer/FooterMainPage'
+// import axios from 'axios'
 export default class BlogShow extends Component {
+
+//   componentDidMount() {
+//     axios.get('http://127.0.0.1:8000/blog_api/')
+//    .then(res => {
+       
+//        this.setState({
+//            articles: res.data
+//        })
+//        // console.log(res.data)
+
+//    })
+// }
+
+  constructor(props) {
+    super(props);
+    console.log(this.props)
+  }
+
   render() {
+  
     return (
       <div>             
           {/* Start Navbar Here */}
@@ -35,7 +54,7 @@ export default class BlogShow extends Component {
             <Col>
             {/* <BlogList articles={this.state.articles}/> */}
             <Jumbotron style={{marginTop: '30px'}}>
-                <h1>Hello, world!</h1>
+                <h1>Hello World</h1>
                 <p>
                     This is a simple hero unit, a simple jumbotron-style component for calling
                     extra attention to featured content or information.

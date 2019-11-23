@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Col, Card,CardDeck} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import '../Homepage.scss'
+import BlogShow from '../../blog/component_blog/BlogShow'
 class  Articles  extends  Component  {
 
     render() {
@@ -9,13 +10,14 @@ class  Articles  extends  Component  {
         return (
             <React.Fragment>
             <Col xs={12} sm={6}  lg={4}> 
-            <Link to='/blog' style={{textDecoration: 'none'}}>
+            <Link to='/BlogShow' style={{textDecoration: 'none'}}>
                 <CardDeck>
                 <Card className="custom-articles">
                     <Card.Img variant="top" src={image} />
                     <Card.Body> 
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
+                        {context}
                     </Card.Text>    
                     </Card.Body>
                     <Card.Footer>

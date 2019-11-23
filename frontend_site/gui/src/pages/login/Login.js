@@ -6,6 +6,11 @@ import logo from '../images_pages/aoc.png'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import * as actions from '../../store/actions/auth'
+// this is Three important Package Here.
+import {Formik} from 'formik'
+import * as EmailValidator from 'email-validator'
+import * as  Yup from 'yup'
+
 class Login extends Component {
 
     componentDidMount() {
@@ -28,7 +33,6 @@ class Login extends Component {
     }
 
     render() {
-
         
         let errorMessage = null 
         if (this.props.error) {
@@ -36,6 +40,7 @@ class Login extends Component {
                 <p>{this.props.error.message}</p>
             ); 
         }
+
         return (  
             <div>
                 <Container>
@@ -66,9 +71,7 @@ class Login extends Component {
                                         <Form.Text style={{color: '#F00'}}>
                                         لا نشارك بريدك الإلكتروني مع أي شخص آخر.
                                         </Form.Text>
-
                                     </Form.Group>
-
                                     <Form.Group controlId="formBasicPassword">
                                         <Form.Label>كلمة المرور </Form.Label>
                                         <Form.Control required type="password" placeholder="كلمة المرور " />
@@ -76,21 +79,20 @@ class Login extends Component {
                                     <Button variant="success" size="lg" type="submit" block style={{marginTop: '40px', marginBottom: '30px'}}>
                                         تسجبل الدخول
                                     </Button>
-                                   {/* <span className="span-login-page">OR</span> */}
+                                   <span className="span-login-page">OR</span>
                                    <Link to="/register">
                                    <Button variant="link" block>سجل الان</Button>
                                    </Link>
                                     </Form>
                                     {/* End Form Here */}
 
-                                </Card.Body>
+                                </Card.Body>    
                             </Card>
                         }
                         </Col>
                     </Row>
               </Container>
-              <Footer />
-
+              <Footer />    
             </div>
         )
     }

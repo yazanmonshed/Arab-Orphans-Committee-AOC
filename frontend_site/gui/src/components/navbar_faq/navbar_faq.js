@@ -29,8 +29,7 @@ export default class Navbar_faq extends Component {
              <div className="overlay-gallery">
 
              </div> 
-            </div>  
-            <h1>this is FAQ Page here</h1>   
+            </div>    
     </section>
         )
     }

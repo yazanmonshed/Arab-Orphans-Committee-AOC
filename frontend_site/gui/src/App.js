@@ -26,9 +26,9 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/studentspage" component={StudentsPage} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/" component={Blog} />
           <Route exact path="/dashborad" component={Dashboard} />
-          <Route exact path="/blogshow" component={BlogShow} />
+          <Route exact path="/blog/:id" component={BlogShow} />
           {/* </Switch> */}
       </main>
     )

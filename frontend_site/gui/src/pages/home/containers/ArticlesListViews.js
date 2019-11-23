@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Articles from '../components_home/articles'
 import {Container, Col, Row, CardDeck} from 'react-bootstrap'
 import axios from 'axios'
+import BlogShow from '../../blog/component_blog/BlogShow'
 export default class ArticlesList extends Component {
 
     constructor() {
@@ -40,7 +41,7 @@ export default class ArticlesList extends Component {
           <Container>
           <Col><h1 style={{textAlign: 'center', marginTop: '40px'}}>آخر المنشورات</h1></Col>
               <Row>
-              {this.state.articles.map((item, index) =>  <Articles info={item} key={index} />)} 
+              {this.state.articles.map((item, index) =>  <Articles info={item} key={index} />)}  
               {/* {this.state.articles.map(function(info, index) {
                   return <Articles info={info} key={index}/>
               })} */}

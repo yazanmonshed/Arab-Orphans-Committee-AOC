@@ -13,11 +13,11 @@ export default class About extends Component {
                 <Navbarabout/>
                     <Breadcrumb>
                     <Container>
+                     <Breadcrumb.Item className="item-one" href="#" active>
+                           <span>  عن الجمعية </span>
+                        </Breadcrumb.Item>
                        <Breadcrumb.Item className="item-one" href="/homepage">
                             <i className="fas fa-home"></i><span> الرئيسية </span>
-                        </Breadcrumb.Item>
-                        <Breadcrumb.Item className="item-one" href="#" active>
-                           <span>  عن الجمعية </span>
                         </Breadcrumb.Item>
                         </Container>
                     </Breadcrumb>

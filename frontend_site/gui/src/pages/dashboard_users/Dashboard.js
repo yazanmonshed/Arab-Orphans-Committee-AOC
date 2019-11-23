@@ -16,6 +16,7 @@ import FormsEachTerm from './forms_each_term'
 
         {
           this.props.isAuthenticated ?
+
           <Nav.Link href="/login" >login</Nav.Link> 
 
           :
@@ -33,7 +34,7 @@ import FormsEachTerm from './forms_each_term'
        </Container>
     </Navbar>
     <Container>
-    <FormsEachTerm />
+    <FormsEachTerm requestType="post" id={null}/>
     </Container>
     
     <FooterMainPage />

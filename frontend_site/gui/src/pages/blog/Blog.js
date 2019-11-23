@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Navbar, Nav, Image} from 'react-bootstrap'
-import BlogList from  './containers/Bloglist'
+import {Container, Row, Col, Navbar, Nav, Image,Pagination} from 'react-bootstrap'
 import axios from 'axios'
 import Search from './component_blog/Search'
 import aoc from '../images_pages/aoc.png'
+import BlogList from  './containers/Bloglist'
 import {Link} from 'react-router-dom'
 import './blog.scss';
 import FooterMainPage from '../../components/footer/FooterMainPage'
+
 export default class Blog extends Component {
 
+  constructor(props) {
+    super(props);
 
-  state = {
-    articles: [],
-    search: "",
+    const id = this.props.match.params.id
+    // console.log(id)
+
+    this.state = {  
+      articles: [],
+      search: "",
+      id,
+      
+    }
+   
+    // console.log(this.props)
     
-}
-
-
+  }
 
 componentDidMount() {
      axios.get('http://127.0.0.1:8000/blog_api/')
@@ -47,6 +56,7 @@ handleSubmit = (e,id) => {
   render() {  
     return (
       <div> 
+      
         <Navbar bg="light" expand="lg"  className="custom-blog-navbar" style={{boxShadow: '2px 0px 9px'}}>
           <Container>
             <div className="custom-link-fontaewsome">
@@ -81,5 +91,3 @@ handleSubmit = (e,id) => {
     );
   }
 }
-
-
