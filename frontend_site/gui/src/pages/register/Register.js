@@ -12,13 +12,15 @@ import * as actions from '../../store/actions/auth'
     handleSubmit = (e) => {
         e.preventDefault();
          
-        this.props.validateFieldsAndScroll((err, values) => {
+        // this.props.validateFieldsAndScroll((err, values) => {
 
-            if (!err) {
-                console.log("Reviced Values of Form :", values);
+        //     if (!err) {
+        //         console.log("Reviced Values of Form :", values);
 
-            }
-        })
+        //     }
+        // })
+        this.props.history.push('/dashborad')
+
     }
 
     render() {

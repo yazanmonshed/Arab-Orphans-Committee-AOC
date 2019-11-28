@@ -14,14 +14,14 @@ export default class Homepage extends Component {
             <div>
                 <Navbars />
                 <Carousels/>
+                
                 <ArticlesList />    
                     <section>
                         <Container>
                         <Row style={{marginTop: '70px'}}>
-                        <h5>بلغ عدد الطلاب الذين تمت تغطية تكاليف دراستهم الجامعية في الاردن 125 طالبًا وطالبة للعام الدراسي  2018/ 2019 حيث بلغت قيمة الفروض والمنح المصروفة مبلغًا  وقدره 144857 دينار, منهم 14  طالبًا و طالبة موزعين كما يلي </h5>
-
                             <Col>
-                            <h3 style={{textAlign: 'center',}}>توزيع الطلاب المستفيدين حسب التخصصات </h3>
+                            <h5>بلغ عدد الطلاب الذين تمت تغطية تكاليف دراستهم الجامعية في الاردن 125 طالبًا وطالبة للعام الدراسي  2018/ 2019 حيث بلغت قيمة الفروض والمنح المصروفة مبلغًا  وقدره 144857 دينار, منهم 14  طالبًا و طالبة موزعين كما يلي </h5>
+                            <h3 style={{textAlign: 'center',marginTop: '20px'}}>توزيع الطلاب المستفيدين حسب التخصصات </h3>
                             <ChartMajor />
                             </Col>
                             
@@ -33,14 +33,18 @@ export default class Homepage extends Component {
                             </Col>
                         </Row>
                         </Container>
-                        <Row lg={6} style={{background: '#DDD'}}>
-                       <Col>
-                            <QrFiles/>
-                        </Col>
-                           <Col>
-                                <h1>welcome here</h1>
-                           </Col>
-                       </Row>
+                        <div style={{ background: 'rgb(247, 247, 247)'}}>
+                            <Container>
+                            <Row  style={{marginTop: '30px',}}>
+                        <Col lg={6}>
+                                <QrFiles/>
+                            </Col>
+                            <Col lg={6}>
+                                    <h5>احصل على نموذج تقديم القرض من خلال الرابط السريع التالي</h5>
+                            </Col>
+                        </Row>
+                        </Container>
+                       </div>
                     </section>
                 <MainFooter/>        
             </div>

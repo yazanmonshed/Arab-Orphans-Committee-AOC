@@ -24,7 +24,7 @@ export const authFail = (error) => {
     }
 }
 
-const logout = (token) => {
+export const logout = (token) => {
     localStorage.removeItem('user')
     localStorage.removeItem('expirationDate')
 
@@ -35,7 +35,7 @@ const logout = (token) => {
 
 }
 
-const checkAuthtimeout  = expirationTime => {
+export const checkAuthtimeout  = expirationTime => {
     return dispatch => {
        setTimeout(() => {
 
@@ -48,7 +48,7 @@ export const authLogin = (username, password) => {
 
     return dispatch => {
         dispatch(authStart())
-        axios.post('127.0.0.1:8000', {
+        axios.post('127.0.0.1:8000/rest-auth/login/', {
             username: username,
             password: password
         })
@@ -73,7 +73,7 @@ export const authSignup = (username,email, password1, password2) => {
 
     return dispatch => {
         dispatch(authStart())
-        axios.post('127.0.0.1:8000', {
+        axios.post('127.0.0.1:8000/rest-auth/registration/', {
             username: username,
             email: email,
             password1: password1,

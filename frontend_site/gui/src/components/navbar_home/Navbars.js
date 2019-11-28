@@ -30,12 +30,12 @@ export default function Navbars() {
             <Link to="/faq"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">الاسئلة الاكثر تكرارا</Nav.Link></Link>
         </Nav>    
             <Navbar.Brand  href="/homepage">
-            <Link to="/homepage"><Image src={aoc} style={{width: '200px', }} rounded /></Link>
-        </Navbar.Brand>
-       </Navbar.Collapse>
-      </Container>
-      <ButtonGroup >
-        <DropdownButton as={ButtonGroup} variant="light" title="Language" size="lg">
+                <Link to="/homepage"><Image src={aoc} style={{width: '200px', }} rounded /></Link>
+            </Navbar.Brand>
+        </Navbar.Collapse>
+        </Container>
+        <ButtonGroup >
+            <DropdownButton as={ButtonGroup} variant="light" title="Language" size="lg">
             <Dropdown.Item>English</Dropdown.Item>
             <Dropdown.Item>Arabic</Dropdown.Item>
         </DropdownButton>

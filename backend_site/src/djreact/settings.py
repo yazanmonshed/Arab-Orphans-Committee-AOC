@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 'accounts',
     'blog',
     'faq',
+    'students',
     'fromeachterm',
     'rest_framework',
     'rest_framework.authtoken',

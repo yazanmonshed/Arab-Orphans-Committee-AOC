@@ -11,7 +11,7 @@ import FormsEachTerm from './forms_each_term'
        <Navbar bg="light">
          <Container>
           <Navbar.Brand href="#home">
-          Students Page 
+          Students Page   
         </Navbar.Brand>
 
         {
@@ -43,16 +43,16 @@ import FormsEachTerm from './forms_each_term'
   }
 }
 
-// const mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
 
-//   return {
+  return {
 
-//     isAuthenticated : state.token !== null ,
+    isAuthenticated : state.token !== null ,
 
-//     loading : state.loading,
-//     error: state.error     
-//   }
-// }
+    loading : state.loading,
+    error: state.error     
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
 
@@ -63,7 +63,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null,mapDispatchToProps)(Dashboard)
+export default connect(mapStateToProps,mapDispatchToProps)(Dashboard)
 
 
 

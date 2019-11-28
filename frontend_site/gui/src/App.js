@@ -12,7 +12,8 @@ import Login from './pages/login/Login';
 import StudentsPage from './pages/students_pages/Students'
 import Blog from './pages/blog/Blog'
 import Dashboard from './pages/dashboard_users/Dashboard'
-import BlogShow from './pages/blog/component_blog/BlogShow'
+import BlogShow from './pages/blog/component_blog/BlogShow' 
+import FirstTimeRegister from './pages/first_time_register/FirstTimeRegister'
 class App extends Component {
   render() {
     return (
@@ -29,6 +30,7 @@ class App extends Component {
           <Route exact path="/blog/" component={Blog} />
           <Route exact path="/dashborad" component={Dashboard} />
           <Route exact path="/blog/:id" component={BlogShow} />
+          <Route exact path="/firsttimeregister" component={FirstTimeRegister} />
           {/* </Switch> */}
       </main>
     )

@@ -82,8 +82,15 @@ export default class About extends Component {
                         </div>
                         
                     </Col>
-                   
                 </Row>
+                {/* <Row>
+                    <Col lg={12}>
+                        <video controls width="600" style={{display: 'block', margin: 'auto'}}>
+                            <source src="https://web.facebook.com/ArabOrphanCommittee/videos/1973984409305258/?t=0"  type="video/ogg"></source>
+                            <source src="https://web.facebook.com/ArabOrphanCommittee/videos/1973984409305258/?t=0" type="video/mp4"></source>
+                        </video>
+                    </Col>
+                </Row> */}
                </Container>
                <MainFooter />
             </div>
