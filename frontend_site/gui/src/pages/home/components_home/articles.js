@@ -15,13 +15,13 @@ class  Articles  extends  Component  {
                 <Card className="custom-articles">
                     <Card.Img variant="top" src={image} />
                     <Card.Body> 
-                    <Card.Title>{title}</Card.Title>
+                    <Card.Title style={{textDecoration: 'none', color: '#333'}}>{title}</Card.Title>
                     <Card.Text>
-                        {context}
+                        {/* {context} */}
                     </Card.Text>    
                     </Card.Body>
                     <Card.Footer>
-                    <small className="text-muted">{date}</small>
+                    <small className="text-muted"><i className="far fa-calendar" style={{margin: '10px'}}></i>{date}</small>
                     </Card.Footer>
                 </Card>
             </CardDeck>

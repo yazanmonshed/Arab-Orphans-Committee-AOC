@@ -58,7 +58,7 @@ export default class Faq extends Component {
                 </Jumbotron>                      
                  </Col>
                 </Row>
-                    {this.state.data.map(res => <Questions questions={res.questions} answers={res.answers} />)}
+                    {this.state.data.map(res => <Questions key={Math.random()* 8} questions={res.questions} answers={res.answers} />)}
                     <FooterMainPage/>
             </div>
         )

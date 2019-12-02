@@ -37,10 +37,10 @@ import * as actions from '../../store/actions/auth'
                                 <Card.Body>
                                 <Form onSubmit={this.handleSubmit} style={{direction: 'rtl'}}>
                                 <Form.Group>
-                                        <Form.Label>الاسم الاول <i className="fas fa-user" style={{color: '#218838'}}></i></Form.Label>
+                                        <Form.Label>اسم الطالب  <i className="fas fa-user" style={{color: '#218838'}}></i></Form.Label>
                                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
 
-                                        <Form.Control  required type="text" size='lg' placeholder="الاسم الاول" />
+                                        <Form.Control  required type="text" size='lg' placeholder="اسم الطالب " />
                                         <Form.Text >
                                         </Form.Text>
                                     </Form.Group>
