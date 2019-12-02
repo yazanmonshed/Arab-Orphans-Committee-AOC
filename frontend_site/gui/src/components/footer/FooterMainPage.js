@@ -18,9 +18,10 @@ export default class FooterMainPageMainFooter extends Component {
                         </Col>
                         <Col lg={3} xs={12} md={6}>
                             <h4>روابط سريعة </h4>
-                            <div><a href="/about" style={{direction:'rtl', textAlign: 'right'}}>عن الجمعية</a></div>
-                            <div><a href="/register" style={{direction: 'rtl', textAlign: 'right'}}>سجل الان</a></div>
-                            <div><a href="/about" style={{direction: 'rtl', textAlign: 'right'}}>عن الجمعية</a></div>
+                            <div><a href="/about" style={{direction:'rtl', textAlign: 'right', color: '#333',textDecoration: 'none'}}>عن الجمعية</a></div>
+                            <div><a href="/register" style={{direction: 'rtl', textAlign: 'right', color: '#333',textDecoration: 'none'}}>سجل الان</a></div>
+                            <div><a href="/about" style={{direction: 'rtl', textAlign: 'right', color: '#333',textDecoration: 'none'}}>عن الجمعية</a></div>
+                            <div><a href="/blog" style={{direction: 'rtl', textAlign: 'right', color: '#333',textDecoration: 'none'}}> المدونة</a></div>
 
                             
                         </Col>
