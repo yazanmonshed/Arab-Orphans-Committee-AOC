@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 'accounts',
     'blog',
     'faq',
+    'imageapp',
     'students',
     'fromeachterm',
     'rest_framework',
