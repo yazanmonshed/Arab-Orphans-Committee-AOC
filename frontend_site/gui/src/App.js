@@ -14,6 +14,9 @@ import Blog from './pages/blog/Blog'
 import Dashboard from './pages/dashboard_users/Dashboard'
 import BlogShow from './pages/blog/component_blog/BlogShow' 
 import FirstTimeRegister from './pages/first_time_register/FirstTimeRegister'
+import RegisterMainPage from './pages/first_time_register/RegisterMainPage'
+import ConditionPage from './pages/first_time_register/conditionPage'
+import Instructions from './pages/first_time_register/InstructionsPage'
 class App extends Component {
   render() {
     return (
@@ -31,6 +34,10 @@ class App extends Component {
           <Route exact path="/dashborad" component={Dashboard} />
           <Route exact path="/blog/:id" component={BlogShow} />
           <Route exact path="/firsttimeregister" component={FirstTimeRegister} />
+          <Route exact path="/mainpageregister" component={RegisterMainPage}/>
+          <Route exact path="/condition" component={ConditionPage}/>
+          <Route exact path="/instructions" component={Instructions}/>
+          
           {/* </Switch> */}
       </main>
     )

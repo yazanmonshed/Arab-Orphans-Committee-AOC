@@ -27,9 +27,9 @@ export default class BlogList extends Component {
     return (
       <div> 
         <Container> 
-            <Row>
+            <Row>ص
                 <Col>
-                <h1 style={{textAlign: 'center'}}>آخر المنشورات</h1>
+                <h1 style={{textAlign: 'center', marginTop: '20px'}}>آخر المنشورات</h1>
                 </Col>
             </Row>
         <Row>

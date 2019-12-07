@@ -43,21 +43,14 @@ export default class Faq extends Component {
                         </Breadcrumb.Item>
                         </Container>
                     </Breadcrumb>
-                    <Row>
-                    <Col> 
-                <Jumbotron style={{background:'#FFF'}}>
                     <Container>
-                        <h1>الأسئلة الأكثر تكرارا</h1>
-                        <p >
-                        تحتوي هذه الصفحة على الاسئلة الشائعة من قبل الاهالي والطلبة
-                        </p>
-                        {/* <p>
-                            <Button variant="primary">Learn more</Button>
-                        </p> */}
-                        </Container>
-                </Jumbotron>                      
-                 </Col>
-                </Row>
+                        <Row>
+                         <Col style={{marginTop: '70px', marginBottom: '70px'}}>
+                         <h1>الأسئلة الأكثر تكرارا</h1>
+                         <p>تحتوي هذه الصفحة على الاسئلة المتكررة من قبل  الطلبة و اولياء الأمور</p>
+                         </Col>                                
+                        </Row>
+                    </Container>
                     {this.state.data.map(res => <Questions key={Math.random()* 8} questions={res.questions} answers={res.answers} />)}
                     <FooterMainPage/>
             </div>
