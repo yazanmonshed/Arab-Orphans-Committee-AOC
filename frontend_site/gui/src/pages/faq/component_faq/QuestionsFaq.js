@@ -9,7 +9,7 @@ export default class Questions extends Component {
            <Container>
                     <Accordion defaultActiveKey="1">
                         <Card>
-                            <Card.Header>
+                             <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" eventKey="0"   style={{textDecoration: 'none', color: '#333'}}>
                                     {questions}
                                     <i className="fas fa-plus" style={{margin: '10px'}}></i>

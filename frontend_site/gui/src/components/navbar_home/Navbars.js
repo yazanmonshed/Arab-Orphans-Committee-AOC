@@ -1,7 +1,7 @@
  
 import React from 'react'
 
-import {Nav, Navbar, Form, FormControl,Button,ButtonGroup, Container, Col, Row, Image,ButtonToolbar, DropdownButton, Dropdown} from 'react-bootstrap'
+import {Nav, Navbar,NavDropdown, Form, FormControl,Button,ButtonGroup, Container, Col, Row, Image,ButtonToolbar, DropdownButton, Dropdown} from 'react-bootstrap'
 // import {Link} from 'react-router-dom' problem here !
 import aoc from '../images/aoc.png'
 import {Link} from 'react-router-dom'
@@ -22,13 +22,25 @@ export default function Navbars() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" style={{color: '#38ef7d'}}>
-              <Link style={{textDecoration: 'none'}} to="/homepage"><Nav.Link style={{fontWeight: 'bold',fontSize: '1.2rem'}}>الرئيسية</Nav.Link></Link>
-           <Link to="/about"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/about">عن الجمعية</Nav.Link></Link> 
+          <Link to="/faq"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">الاسئلة الاكثر تكرارا</Nav.Link></Link>
+           {/* <Link to="/about"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/about">عن الجمعية</Nav.Link></Link>  */}
+           <NavDropdown style={{fontWeight: 'bold', fontSize: '1.2rem'}} title="البرامج">
+           <Link to="/about"><NavDropdown.Item href="/about">عن الجمعية</NavDropdown.Item></Link>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/mainpageregister">المنح والقروض</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
             <Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/blog">المدونة</Nav.Link>
             <Link to="/gallery"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/gallery">معرض الصور</Nav.Link></Link>
             <Link to="/students"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/students">طلابنا</Nav.Link></Link>
-            <Link to="/faq"><Nav.Link style={{fontWeight: 'bold', fontSize: '1.2rem'}} href="/faq">الاسئلة الاكثر تكرارا</Nav.Link></Link>
-        </Nav>    
+            <Link style={{textDecoration: 'none'}} to="/homepage"><Nav.Link style={{fontWeight: 'bold',fontSize: '1.2rem'}}>الرئيسية</Nav.Link></Link>
+
+            
+         </Nav>    
             <Navbar.Brand  href="/homepage">
                 <Link to="/homepage"><Image src={aoc} style={{width: '200px', }} rounded /></Link>
             </Navbar.Brand>

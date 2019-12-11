@@ -33,7 +33,7 @@ export default class ChartMoney extends Component {
   render() {
     return (
       <section> 
-          <Pie 
+          <Pie height="80%"  width="80%"
           data={this.state.ChartData}
             // options={{
             //     title: {

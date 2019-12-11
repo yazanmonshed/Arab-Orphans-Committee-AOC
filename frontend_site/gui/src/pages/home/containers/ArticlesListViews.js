@@ -18,14 +18,22 @@ export default class ArticlesList extends Component {
     
     
     componentDidMount() {
-        axios.get(`http://127.0.0.1:8000/blog_api`)
+        axios.get('http://127.0.0.1:8000/blog_api',{params: {_limit: 3 }})
         .then(res => {
             
             this.setState({
                 'articles': res.data
             })
+            console.log(res)
 
         })
+        // axios({
+        //     method: 'get',
+        //     url: 'http://127.0.0.1:8000/blog_api',
+        //     params: {
+        //         _limit: 2,  
+        //     }
+        // })
 
     }
     

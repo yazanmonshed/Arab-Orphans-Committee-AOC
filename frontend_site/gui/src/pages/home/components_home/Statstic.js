@@ -3,6 +3,7 @@ import {Bar, Line,Pie} from 'react-chartjs-2';
 
 export default class ChartMajor extends Component {
     constructor(props) {
+
         super(props);
         this.state = {
             ChartData : {   
@@ -33,7 +34,7 @@ export default class ChartMajor extends Component {
   render() {
     return (
       <section> 
-          <Pie 
+          <Pie  height="80%"  width="80%"
           data={this.state.ChartData}
             // options={{
             //     title: {

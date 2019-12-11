@@ -8,32 +8,39 @@ import ChartMoney from './components_home/Statstic2'
 import ArticlesList from './containers/ArticlesListViews'
 import {Container, Row, Col} from 'react-bootstrap'
 import QrFiles from './components_home/QrFiles'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 export default class Homepage extends Component {
     render() {
         return (
             <div>
                 <Navbars />
                 <Carousels/>
-                
                 <ArticlesList />    
                     <section>
+                        <Container> 
+                        </Container>
+                        <div style={{background: 'rgb(249, 249, 249)', marginTop: '70px', paddingBottom: '70px'}}>
                         <Container>
-                        <Row style={{marginTop: '70px'}}>
-                            <Col>
+                        <Row>   
+                            <Col style={{marginTop: '70px'}}>
                             <h5>بلغ عدد الطلاب الذين تمت تغطية تكاليف دراستهم الجامعية في الاردن 125 طالبًا وطالبة للعام الدراسي  2018/ 2019 حيث بلغت قيمة الفروض والمنح المصروفة مبلغًا  وقدره 144857 دينار, منهم 14  طالبًا و طالبة موزعين كما يلي </h5>
-                            <h3 style={{textAlign: 'center',marginTop: '20px'}}>توزيع الطلاب المستفيدين حسب التخصصات </h3>
+                            </Col>
+                        </Row>
+                        <Row style={{marginTop: '50px'}}>
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                {/* <Container></Container> */}
+                            <h3 style={{textAlign: 'center'}}>توزيع الطلاب المستفيدين حسب التخصصات </h3>
                             <ChartMajor />
                             </Col>
-                            
-                        </Row>
-                        <Row style={{marginTop: '70px'}}>
-                        <Col>
+                            <Col lg={6} md={6} sm={12} xs={12}>
                             <h3 style={{textAlign: 'center'}}>توزيع الطلاب  حسب القروض والمنح </h3>
                                 <ChartMoney />
                             </Col>
                         </Row>
                         </Container>
-                        <div style={{ background: 'rgb(247, 247, 247)'}}>
+                        </div>
+                        <div>
                             <Container>
                             <Row  style={{marginTop: '30px',}}>
                         <Col lg={6}>
@@ -43,6 +50,12 @@ export default class Homepage extends Component {
                                     <h5>احصل على نموذج تقديم القرض من خلال الرابط السريع التالي</h5>
                             </Col>
                         </Row>
+                        <Row>
+                            <Col>
+                            <MessengerCustomerChat pageId="<YOUR_PAGE_ID>" appId="<YOUR_APP_ID>" />
+
+                            </Col>
+                        </Row>  
                         </Container>
                        </div>
                     </section>
