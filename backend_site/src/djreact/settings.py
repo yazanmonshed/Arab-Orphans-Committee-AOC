@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'faq',
     'imageapp',
     'students',
+    'our_students',
     'fromeachterm',
     'rest_framework',
     'rest_framework.authtoken',
